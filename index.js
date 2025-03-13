@@ -9,6 +9,9 @@ app.use(express.json());
 const PORT=process.env.PORT;
 connectDB();
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
 
 
